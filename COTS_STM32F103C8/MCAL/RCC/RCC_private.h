@@ -2,6 +2,7 @@
 #define RCC_PRIVATE
 
 
+/*******************RCC_REGISTERS_ADDRESSES********************/
 
 #define RCC_BASE_ADDRESS                 0x40021000
 #define RCC_CR                     (*(volatile u32 *)0x40021000)
@@ -16,6 +17,8 @@
 
 
 
+/************************RCC_CR_BITS***************************/
+
 #define RCC_CR_HSION         0
 #define RCC_CR_HSIRDY        1
 #define RCC_CR_HSEON         16
@@ -25,35 +28,30 @@
 #define RCC_CR_PLLRDY        25
 
 
-
-#define RCC_CFGR_PLLXTPRE    17
-#define RCC_CFGR_PLLSRC      16
-//#define RCC_CFGR_PLLMUL  
+/***********************RCC_CFGR_BITS**************************/
 
 
+#define RCC_CFGR_PLLSRC_HSI         16
 
-#define RCC_AHB     0
-#define RCC_APB1    1
-#define RCC_APB2    2
-
-
+#define RCC_CFGR_PLLXTPRE       17
 
 #define RCC_AHBENR_DMA1EN       0
 #define RCC_AHBENR_DMA2EN       1
 #define RCC_AHBENR_SRAMEN       2
 
-
-
 #define RCC_APB1_TIM2EN         0
 #define RCC_APB1_TIM3EN         1
 #define RCC_APB1_TIM4EN         2
-
-
 
 #define RCC_APB2_AFIOEN         0
 #define RCC_APB2_IOPAEN         2
 #define RCC_APB2_IOPBEN         3
 
 
+/******************SWITCH_CASE_ARGUMENTS*********************/
+
+#define RCC_AHB     0
+#define RCC_APB1    1
+#define RCC_APB2    2
 
 #endif

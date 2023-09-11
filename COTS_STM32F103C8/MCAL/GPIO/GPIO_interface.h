@@ -35,9 +35,9 @@ Std_ReturnType MCAL_GPIO_GetPinMode(u8 CopyPortId, u8 CopyPinId, u8 *CopyPinRetu
 
 /****************************GPIO_PINMODE****************************/
 
-#define GPIO_PINMODE_IP_ANALOG          0b0000
-#define GPIO_PINMODE_IP_FLOATING        0b0100
-#define GPIO_PINMODE_IP_PULL_UpDown     0b1000
+#define GPIO_PINMODE_IP_ANALOG                           0b0000
+#define GPIO_PINMODE_IP_FLOATING                         0b0100
+#define GPIO_PINMODE_IP_PULL_UpDown                      0b1000
 
 
 
